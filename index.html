@@ -162,22 +162,19 @@
       <div class="proj-entry expandable">
         <button class="proj-head" aria-expanded="false">
           <span class="chevron">▸</span>
-          <span class="proj-name">gits-shell</span>
+          <span class="proj-name">joeSH</span>
           <span class="proj-lang">C++</span>
         </button>
-        <div class="proj-desc">Custom Unix shell &amp; REPL with a raw-mode terminal engine (direct <span class="code">termios</span> control), dynamic multiline input wrapping, and a Git-aware prompt that tracks repo state in real time.</div>
+        <div class="proj-desc">Custom Unix shell &amp; REPL with a raw-mode terminal engine (direct <span class="code">termios</span> control), dynamic multiline input wrapping.</div>
         <div class="proj-panel">
           <div class="proj-panel-inner">
-            <!-- Swap for <img src="gits-shell.png" class="proj-shot" alt="gits-shell screenshot"> -->
-            <div class="proj-shot-slot"><span>drop a screenshot here — gits-shell.png</span></div>
             <ul class="proj-features">
               <li><strong>Raw mode engine</strong> — bypasses line buffering (<span class="code">ICANON</span>) and echo (<span class="code">ECHO</span>) via <span class="code">termios</span> to read raw keystrokes in real time.</li>
               <li><strong>Smart multiline wrapping</strong> — queries terminal columns via <span class="code">ioctl</span> to keep the cursor in sync with the input buffer across wraps.</li>
               <li><strong>Ctrl+C handling</strong> — overrides kernel signals to cleanly clear only the active input line using terminal escape codes, without touching scrollback.</li>
               <li><strong>Process isolation</strong> — spawns external binaries via <span class="code">fork()</span> / <span class="code">execvp()</span>, suspending raw mode during execution.</li>
-              <li><strong>Git awareness</strong> — detects local <span class="code">.git</span> directories and attaches live repo context to the prompt.</li>
             </ul>
-            <a class="proj-link" href="https://github.com/dud-eisme/gits-shell" target="_blank" rel="noopener">View source →</a>
+            <a class="proj-link" href="https://github.com/dud-eisme/joeSH" target="_blank" rel="noopener">View source →</a>
           </div>
         </div>
       </div>
@@ -191,8 +188,6 @@
         <div class="proj-desc">A touch-control server for Hyprland — turns any phone or tablet on your LAN into a physical deck for your desktop, talking directly to Hyprland, PipeWire, <span class="code">playerctl</span>, and <span class="code">brightnessctl</span>.</div>
         <div class="proj-panel">
           <div class="proj-panel-inner">
-            <!-- Swap for <img src="hyprdeck.png" class="proj-shot" alt="HyprDeck screenshot"> -->
-            <div class="proj-shot-slot"><span>drop a screenshot here — hyprdeck.png</span></div>
             <ul class="proj-features">
               <li><strong>Touch UI over LAN</strong> — serves a lightweight web UI any device on the network can open to control the desktop.</li>
               <li><strong>Workspace &amp; window control</strong> — switches Hyprland workspaces and focuses windows via <span class="code">hyprctl</span> dispatch calls.</li>
@@ -214,8 +209,6 @@
         <div class="proj-desc">A Discord bot built with <span class="code">discord.py</span> for the r/surat community server (~450 members) — handles onboarding, moderation, and community engagement.</div>
         <div class="proj-panel">
           <div class="proj-panel-inner">
-            <!-- Swap for <img src="khawsa-bot.png" class="proj-shot" alt="khawsa-bot screenshot"> -->
-            <div class="proj-shot-slot"><span>drop a screenshot here — khawsa-bot.png</span></div>
             <ul class="proj-features">
               <li><strong>Onboarding</strong> — auto-assigns roles on join, sends a DM'd getting-started guide, and keeps a live human-member counter.</li>
               <li><strong>Role-gated moderation</strong> — <span class="code">/kick</span>, <span class="code">/ban</span>, and bulk purge commands with owner/self-protection checks and permission-hierarchy handling.</li>
@@ -237,8 +230,6 @@
         <div class="proj-desc">A command-line archiving &amp; compression tool built on <span class="code">zlib</span>, with a custom CLI for packing and extracting files.</div>
         <div class="proj-panel">
           <div class="proj-panel-inner">
-            <!-- Swap for <img src="archiver.png" class="proj-shot" alt="archiver screenshot"> -->
-            <div class="proj-shot-slot"><span>drop a screenshot here — archiver.png</span></div>
             <p class="proj-note">A from-scratch archiver/compressor built on <span class="code">zlib</span>, compiled with <span class="code">g++</span> and linked against <span class="code">pthread</span>. Run the binary with no arguments to print available commands — a small, self-contained project built for the fun of understanding how archive formats actually work.</p>
             <a class="proj-link" href="https://github.com/dud-eisme/archiver" target="_blank" rel="noopener">View source →</a>
           </div>
